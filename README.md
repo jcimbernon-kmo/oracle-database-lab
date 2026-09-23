@@ -6,4 +6,3 @@ Linea Extra
     testing, change management and Git workflows.
     Name: Juan Carlos Imbernon
     Professor: Richard Aviles Lopez
-"test" 
