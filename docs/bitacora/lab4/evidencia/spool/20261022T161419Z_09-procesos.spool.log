@@ -1,0 +1,42 @@
+== 1. Cuántos procesos tiene la instancia y de qué tipo ==
+
+TIPO        PROCESOS_ORACLE PROCESOS_LINUX
+----------- --------------- --------------
+background               93             60
+servidor                  4              4
+== 2. Los procesos obligatorios y los que verás en el examen (v$bgprocess + v$process) ==
+
+PNAME  SPID     DESCRIPTION                                     
+------ -------- ------------------------------------------------
+PMON   1331     process cleanup                                 
+LREG   1395     Listener Registration                           
+SMON   1387     System Monitor Process                          
+DBW0   1377     db writer process 0                             
+LGWR   1381     Redo etc.                                       
+CKPT   1385     checkpoint                                      
+MMON   1405     Manageability Monitor Process                   
+MMNL   1411     Manageability Monitor Process 2                 
+RECO   1393     distributed recovery                            
+ARC0   1482     Archival Process 0                              
+CJQ0   1682     Job Queue Coordinator                           
+CLMN   1335     process cleanup                                 
+DIA0   1375     diagnosibility process 0                        
+DIAG   1361     diagnosibility process                          
+MMAN   1353     Memory Manager                                  
+PMAN   1373     process manager                                 
+VKTM   1343     Virtual Keeper of TiMe process                  
+== 3. ¿Hay archivador (ARCn)? En NOARCHIVELOG no debería aparecer ==
+
+PROCESOS_ARCN
+-------------
+            4
+== 4. Mi sesión y el proceso servidor que la atiende (arquitectura de servidor dedicado) ==
+
+       SID    SERIAL# USERNAME     MACHINE        PROGRAM                            SPID    
+---------- ---------- ------------ -------------- ---------------------------------- --------
+        65       7627 C##OPS_RO    HP15           SQLcl                              2131    
+== 5. Todas las sesiones de usuario ahora mismo ==
+
+       SID USERNAME     STATUS   MACHINE        PROGRAM                            SPID    
+---------- ------------ -------- -------------- ---------------------------------- --------
+        65 C##OPS_RO    ACTIVE   HP15           SQLcl                              2131    

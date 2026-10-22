@@ -1,0 +1,46 @@
+== Alert log: /opt/oracle/diag/rdbms/free/FREE/trace/alert_FREE.log ==
+Completed: ALTER DATABASE DISMOUNT
+2026-10-22T16:08:45.568774+00:00
+2026-10-22T16:08:46.142561+00:00
+Instance shutdown complete (OS id: 1327)
+2026-10-22T16:08:46.310089+00:00
+Starting ORACLE instance (normal) (OS id: 1328)
+2026-10-22T16:08:46.327848+00:00
+2026-10-22T16:08:46.328228+00:00
+2026-10-22T16:08:46.328251+00:00
+2026-10-22T16:08:46.328285+00:00
+2026-10-22T16:08:46.328306+00:00
+2026-10-22T16:08:46.328350+00:00
+2026-10-22T16:08:46.328389+00:00
+2026-10-22T16:08:46.328410+00:00
+2026-10-22T16:08:46.328432+00:00
+2026-10-22T16:08:46.328484+00:00
+2026-10-22T16:08:46.328510+00:00
+2026-10-22T16:08:46.328531+00:00
+2026-10-22T16:08:46.328591+00:00
+2026-10-22T16:08:46.678172+00:00
+2026-10-22T16:08:46.784795+00:00
+ORA-00800: soft external error, arguments: [Set Priority Failed], [VKTM], [Check traces and OS configuration], [Check Oracle document and MOS notes], []
+2026-10-22T16:08:46.977625+00:00
+ORA-00800: soft external error, arguments: [Set Priority Failed], [LGWR], [Check traces and OS configuration], [Check Oracle document and MOS notes], []
+2026-10-22T16:08:47.430968+00:00
+ALTER DATABASE MOUNT
+2026-10-22T16:08:47.469130+00:00
+2026-10-22T16:08:47.495387+00:00
+Successful mount of redo thread 1, with mount id 1519395407
+2026-10-22T16:08:47.495794+00:00
+Completed: ALTER DATABASE MOUNT
+ALTER DATABASE OPEN
+Crash Recovery excluding pdb 2 which was cleanly closed.
+Crash Recovery excluding pdb 3 which was cleanly closed.
+2026-10-22T16:08:47.627512+00:00
+Successful open of redo thread 1
+2026-10-22T16:08:47.650448+00:00
+2026-10-22T16:08:48.504628+00:00
+2026-10-22T16:08:49.040025+00:00
+PDB$SEED(2):Opening pdb with Resource Manager plan: DEFAULT_PLAN
+FREEPDB1(3):Opening pdb with Resource Manager plan: DEFAULT_PLAN
+2026-10-22T16:08:50.089284+00:00
+Completed: Pluggable database FREEPDB1 opened read write 
+Completed: ALTER DATABASE OPEN
+2026-10-22T16:08:50.925229+00:00
