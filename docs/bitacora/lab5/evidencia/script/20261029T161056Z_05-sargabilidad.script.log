@@ -1,0 +1,16 @@
+
+
+
+
+===== Regla 1 · FUNCIÓN sobre la columna (Q1, inicio de sesión: 800 por segundo) =====
+BEGIN lab_tools.medir.consulta('Q1 rota', q'[SELECT id_cliente, nombre FROM tiendasur.cliente WHERE UPPER(email) = UPPER('Cliente4711@TiendaSur.es')]'); END;
+
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7:
+PLS-00201: identifier 'LAB_TOOLS.MEDIR' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+Help: https://docs.oracle.com/error-help/db/ora-06550/
+
+

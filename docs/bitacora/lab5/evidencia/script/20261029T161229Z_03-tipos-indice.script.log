@@ -1,0 +1,16 @@
+
+
+
+
+===== 1. ÚNICO (Q13, verificación de identidad): buscar Y garantizar que no hay dos DNI iguales =====
+BEGIN lab_tools.medir.consulta('Q13 sin índice', q'[SELECT id_cliente, nombre, apellidos FROM tiendasur.cliente WHERE dni = '00004711L']'); END;
+
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7:
+PLS-00201: identifier 'LAB_TOOLS.MEDIR' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+Help: https://docs.oracle.com/error-help/db/ora-06550/
+
+
