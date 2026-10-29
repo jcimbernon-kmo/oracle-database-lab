@@ -1,0 +1,20 @@
+V005 ya está aplicada: solo se mide el escenario V005 (para repetir el experimento completo, restaura lab4-final)
+
+===== Escenario: V005 =====
+
+INDICES_EN_PEDIDO INDICES
+----------------- --------------------------------------------------------------------------------------------------------------
+                5 IX_PED_CLI_FEC_CUB, IX_PED_CP, IX_PED_FECHA, IX_PED_PENDIENTES, PK_PEDIDO
+BEGIN lab_tools.medir.dml('V005: 2000 INSERT', q'[BEGIN FOR i IN 1 .. 2000 LOOP INSERT INTO tiendasur.pedido (id_pedido, id_cliente, fecha_pedido, estado, importe, canal, codigo_postal) VALUES (2000000 + i, MOD(i * 7919, 100000) + 1, SYSTIMESTAMP, 'P', 10 + MOD(i, 90), 'W', TO_CHAR(25000 + MOD(i * 31, 11000))); END LOOP; END;]', 2000); END;
+
+*
+ERROR at line 1:
+ORA-06550: line 1, column 53:
+PL/SQL: ORA-00942: table or view "TIENDASUR"."PEDIDO" does not exist
+ORA-06550: line 1, column 31:
+PL/SQL: SQL Statement ignored
+ORA-06512: at "LAB_TOOLS.MEDIR", line 9
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-06550/
+
+

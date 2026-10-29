@@ -1,0 +1,30 @@
+===== 1. Configuración de Undo Tablespace =====
+
+TABLESPACE_NAME 	       RETENTION   STATUS
+------------------------------ ----------- ---------
+UNDOTBS1		       NOGUARANTEE ONLINE
+
+===== 2. Parámetros de Undo y Retention =====
+
+NAME
+--------------------------------------------------------------------------------
+VALUE
+--------------------------------------------------------------------------------
+undo_management
+AUTO
+
+undo_tablespace
+UNDOTBS1
+
+undo_retention
+900
+
+
+===== 3. Estadísticas de Undo Segments y ORA-01555 =====
+SELECT begin_time, end_time, undoblks, txncount, maxquerylen, ssolderrcnt, nspaceerrcnt
+                                                                           *
+ERROR at line 1:
+ORA-00904: "NSPACEERRCNT": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+
+
