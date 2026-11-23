@@ -1,0 +1,16 @@
+== EVIDENCIA alumno=E036 hora=2026-11-23T16:59:21Z origen=08-inc602-intervencion
+== EVIDENCIA contenedor=a994b5799b06 dbid=1509902213 arranque=2026-11-23T16:06:19 scn=6293595
+
+Session altered.
+
+
+PL/SQL procedure successfully completed.
+
+
+Pluggable database altered.
+
+
+NAME								     CON_ID
+---------------------------------------------------------------- ----------
+academia_app								  3
+
