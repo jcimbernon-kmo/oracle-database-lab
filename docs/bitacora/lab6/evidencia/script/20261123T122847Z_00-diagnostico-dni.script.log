@@ -1,0 +1,20 @@
+== EVIDENCIA alumno=E036 hora=2026-11-23T12:28:47Z origen=00-diagnostico-dni
+== EVIDENCIA contenedor=a994b5799b06 dbid=1509902213 arranque=2026-11-23T11:33:27 scn=6270305
+
+Session altered.
+
+
+OWNER	     INDEX_NAME 	    UNIQUENES STATUS   VISIBILIT N_COLUMNAS
+------------ ---------------------- --------- -------- --------- ----------
+TIENDASUR    UK_CLIENTE_DNI	    UNIQUE    VALID    VISIBLE		  1
+
+1 row selected.
+
+
+CONSTRAINT_NAME 														 C
+-------------------------------------------------------------------------------------------------------------------------------- -
+PK_CLIENTE															 P
+UK_CLIENTE_DNI															 U
+
+2 rows selected.
+
