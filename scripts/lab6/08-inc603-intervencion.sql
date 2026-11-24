@@ -1,0 +1,4 @@
+ALTER SESSION SET CONTAINER = FREEPDB1;
+ALTER USER app_academia ACCOUNT UNLOCK;
+SELECT username, account_status FROM dba_users WHERE username = 'APP_ACADEMIA';
+EXIT

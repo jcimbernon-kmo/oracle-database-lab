@@ -1,0 +1,16 @@
+== EVIDENCIA alumno=E036 hora=2026-11-23T12:27:16Z origen=00-reparar-lab5
+== EVIDENCIA contenedor=a994b5799b06 dbid=1509902213 arranque=2026-11-23T11:33:27 scn=6270249
+
+Session altered.
+
+== DNI repetidos (debe salir vacío) ==
+
+no rows selected
+
+CREATE UNIQUE INDEX tiendasur.ux_cli_dni ON tiendasur.cliente (dni) ONLINE
+                                                               *
+ERROR at line 1:
+ORA-01408: such column list already indexed
+Help: https://docs.oracle.com/error-help/db/ora-01408/
+
+

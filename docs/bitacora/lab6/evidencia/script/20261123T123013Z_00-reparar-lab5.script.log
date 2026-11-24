@@ -1,0 +1,15 @@
+== EVIDENCIA alumno=E036 hora=2026-11-23T12:30:13Z origen=00-reparar-lab5
+== EVIDENCIA contenedor=a994b5799b06 dbid=1509902213 arranque=2026-11-23T11:33:27 scn=6270362
+
+Session altered.
+
+
+Index altered.
+
+
+CONSTRAINT_NAME  INDEX_NAME   UNIQUENES STATUS
+---------------- ------------ --------- --------
+UK_CLIENTE_DNI	 UX_CLI_DNI   UNIQUE	VALID
+
+1 row selected.
+

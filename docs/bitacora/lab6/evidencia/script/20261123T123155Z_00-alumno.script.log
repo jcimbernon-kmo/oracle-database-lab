@@ -1,0 +1,16 @@
+== 1. login.sql para SQLcl (raíz del repositorio) ==
+-- login.sql — GENERADO por scripts/ops/alumno.sh a partir de config/.env: no lo edites a mano
+DEFINE ESTUDIANTE = E036
+SET SQLPROMPT "E036 _USER'@'_CONNECT_IDENTIFIER> "
+SET TIME ON
+SQLcl lo lee si arrancas 'sql' desde la raíz del repositorio (00-config.sh exporta SQLPATH=/home/juancarlos/oracle-database-lab).
+== 2. El mismo prompt en el SQL*Plus del contenedor ==
+REM oralab-alumno inicio (scripts/ops/alumno.sh)
+DEFINE ESTUDIANTE = E036
+SET SQLPROMPT "E036 _USER'@'_CONNECT_IDENTIFIER> "
+SET TIME ON
+REM oralab-alumno fin
+== 3. Cabecera de tus evidencias ==
+== EVIDENCIA alumno=E036 hora=2026-11-23T12:31:56Z origen=alumno
+== EVIDENCIA contenedor=a994b5799b06 dbid=1509902213 arranque=2026-11-23T11:33:27 scn=6270416
+Listo: cada evidencia del Lab 6 empezará con estas dos líneas.
