@@ -17,9 +17,9 @@
 - Accion preventiva: añadir a turno.sql la comprobacion servicios definidos que no estan arrancados, para detectarlo antes que el usuario.
 
 ## INC-603 · La app no entra (ORA-28000)
-- Deteccion: 16:53 UTC · Equipo de matriculas, mediante ticket.
-- Impacto: ninguna instancia de la app puede iniciar sesion desde las 21:00.
-- Diagnostico: 08-diagnostico.sql, muestra LOCKED, pero con 10 intentos restantes por contraseña.
+- Deteccion: 16:59 UTC · Equipo de matriculas, mediante ticket.
+- Impacto: ninguna instancia de la app puede iniciar sesion desde las 16:59.
+- Diagnostico: 08-diagnostico.sql, muestra LOCKED, pero con 10 intentos restantes por contraseña, por lo que es un bloqueo manual.
 - Causa raiz: la cuenta se bloqueo a mano a la misma hora en la que se ejecuto el script de bajas, por lo que puso a todas las cuentas como si fuera la de un empleado.
 - Intervencion: (ALTER USER app_academia ACCOUNT UNLOCK), asi no se toca la contraseña ni privilegios.
 - Validacion: app.sh entra como APP ACADEMIA, en la seccion 7 del diagnostico sale vacia.
